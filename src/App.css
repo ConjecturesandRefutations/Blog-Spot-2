@@ -24,7 +24,7 @@ button {
   background-image: url(./images/stars.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  animation: pan 6s infinite linear;
+  animation: pan 6s infinite alternate linear;
   height: 100vh; 
   width: 100%; 
   margin: 0;
