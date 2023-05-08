@@ -48,7 +48,7 @@ button {
 
 .login-card {
   width: 100%;
-  padding: 70px 30px 44px;
+  padding: 20px 30px 44px;
   border-radius: 24px;
   background: #ffffff;
   text-align: center;
@@ -59,6 +59,59 @@ button {
     margin: 0;
     width: 400px;
   }
+}
+
+@media (max-width: 500px) {
+  .login-card {
+    margin: 0;
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .login-card {
+    margin: 0;
+    width: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .login-card {
+    margin: 0;
+    width: 300px;
+  }
+}
+
+@media (max-width: 328px) {
+  .login-card {
+    margin: 0;
+    width: 290px;
+  }
+}
+
+@media (max-width: 300px) {
+  .login-card {
+    margin: 0;
+    width: 280px;
+  }
+}
+
+@media (max-width: 290px) {
+  .login-card {
+    margin: 0;
+    width: 270px;
+  }
+}
+
+@media (max-width: 275px) {
+  .login-card {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.loginSignup{
+  margin-bottom: 0px; 
 }
 
 .t1 {
@@ -124,3 +177,4 @@ button {
   outline: none;
   box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.4);
 }
+
