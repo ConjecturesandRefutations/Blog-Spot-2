@@ -178,3 +178,28 @@ button {
   box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.4);
 }
 
+.theme{
+  position: fixed;
+  right: 50px;
+  top: 20px;
+  display: flex;
+  flex-direction: row;
+  max-width: 100px;
+  z-index: 9999;
+  height: 50px;
+  margin-right: 10px;
+ }
+
+ .theme:hover{
+  cursor: pointer;
+ }
+
+ .light {
+  background-color: white;
+  color: black;
+}
+ 
+.dark {
+  background-color: #0e090fd3;
+  color: white;
+}
