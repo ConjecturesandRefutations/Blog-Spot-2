@@ -1,10 +1,13 @@
 import './App.css';
 import { Routes, Route, useLocation } from "react-router-dom";
-import Login from "./pages/Login"
-import Signup from './pages/Signup';
 import Homepage from './pages/Homepage';
 
 import Theme from './components/themeToggle'
+
+import Login from "./pages/Login"
+import Signup from './pages/Signup';
+import IsPrivate from "./components/IsPrivate";
+import IsAnon from "./components/IsAnon";
 
 function App() {
   const location = useLocation();
@@ -15,9 +18,9 @@ function App() {
     <>
         {!shouldHideTheme && <Theme />}
         <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path='/signup' element={<Signup />}/>
-        <Route path='/homepage' element={<Homepage />}/>
+        <Route path="/" element={<IsAnon><Login /></IsAnon>} />
+        <Route path='/signup' element={<IsAnon><Signup /></IsAnon>}/>
+        <Route path='/homepage' element={<IsPrivate><Homepage /></IsPrivate>}/>
         </Routes>
     </>
   );
