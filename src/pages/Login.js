@@ -56,7 +56,7 @@ function Login() {
       <h2>Login</h2>
       <h3>Enter your details</h3>
       <form className="login-form" onSubmit={handleLoginSubmit}>
-        <input type="email" name="email" value={email} onChange={handleEmail} placeholder="Email" />
+        <input type="email" name="email" value={email} onChange={handleEmail} placeholder="email" />
         <input type="password" name="password" value={password} onChange={handlePassword} placeholder="password"/>
         { errorMessage && <p className="error-message">{errorMessage}</p> }
         <p className="loginSignup">Don't have an account?</p>

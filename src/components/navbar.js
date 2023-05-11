@@ -21,7 +21,7 @@ function Navbar() {
     <li className={"nav_items" }><FontAwesomeIcon className="fa" icon={faBell} />Notifications</li>
     <li className={"nav_items" }><FontAwesomeIcon className="fa" icon={faStar} />Favourites</li>
     <li className={"nav_items" }><FontAwesomeIcon className="fa" icon={faGear} />Settings</li>
-    <li className={"nav_items" } onClick={logOutUser}><FontAwesomeIcon className="fa" icon={faRightFromBracket} />Logout</li>
+    <li className={"nav_items" } id="logout" onClick={logOutUser}><FontAwesomeIcon className="fa" icon={faRightFromBracket} />Logout</li>
 </ul>
 
 </div>

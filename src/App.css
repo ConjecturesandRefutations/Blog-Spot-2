@@ -21,7 +21,7 @@ button {
   place-items: center;
   margin: 0;
   padding: 0;
-  background-image: url(./images/stars.jpg);
+  background-image: url(./images/pencils.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   animation: pan 6s infinite alternate linear;
@@ -37,8 +37,6 @@ button {
   margin: 0;
   padding: 0;
 }
-
-
 
 @media (min-width: 500px) {
   .login {
@@ -194,13 +192,13 @@ button {
  }
 
  .light {
-  background-color: #d4bdac;
+  background-color: #E8EDEF;
   color: #333;
 }
  
 .dark {
   background-color: #333;
-  color: #d4bdac;
+  color: #E8EDEF;
 }
 
 .homepage{
@@ -237,7 +235,7 @@ button {
 
 .Navbar:hover {
   width: 175px;
-  overflow-y: auto;
+  overflow-y: none;
 }
 
 .Navbar.light {
@@ -247,7 +245,7 @@ button {
 
 .Navbar.dark {
   background-color: black;
-  color: #d4bdac;
+  color: #E8EDEF;
 }
 
 .nav_items{
@@ -273,4 +271,8 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#logout{
+  margin-top: 42vh;
 }
