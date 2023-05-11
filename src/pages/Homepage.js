@@ -1,5 +1,6 @@
 import { React, useContext } from "react";
 import { ThemeContext } from './../context/theme.context'; 
+import Navbar from "../components/navbar";
 
 
 function Homepage() {
@@ -9,7 +10,11 @@ function Homepage() {
   return (
     <div className={'homepage ' + theme}>
 
-<h1>Hello!</h1>
+      <Navbar/> 
+
+      <div className="homeContent">
+      <h1 id="hello">Hello!</h1>
+      </div>
 
     </div>
 

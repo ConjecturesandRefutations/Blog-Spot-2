@@ -19,7 +19,7 @@ function changeTheme(theme){
 
 return(
 <>
-<div class='theme'>
+<div class='themeButton'>
 <img class='sun-moon' src={changeTheme(theme)} alt='sun-moon' onClick={toggleTheme}/>
 </div>
 </>

@@ -178,28 +178,97 @@ button {
   box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.4);
 }
 
-.theme{
+.themeButton{
   position: fixed;
   right: 50px;
   top: 20px;
   display: flex;
   flex-direction: row;
-  max-width: 100px;
   z-index: 9999;
-  height: 50px;
+  height: 30px;
   margin-right: 10px;
  }
 
- .theme:hover{
+ .themeButton:hover{
   cursor: pointer;
  }
 
  .light {
   background-color: white;
-  color: black;
+  color: #333;
 }
  
 .dark {
-  background-color: #0e090fd3;
+  background-color: #333;
   color: white;
+}
+
+.homepage{
+  height: 100vh; 
+  width: 100%; 
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.Navbar {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100vh;
+  transition: .2s ease;
+  background: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  color: white;
+  box-shadow: 0px 0px 10px #666666;
+  font-family: poppins;
+  margin: 0;
+  list-style-type: none;
+}
+
+.Navbar:hover {
+  width: 175px;
+  overflow-y: auto;
+}
+
+.Navbar.light {
+  background-color: white;
+  color: #333;
+}
+
+.Navbar.dark {
+  background-color: #333;
+  color: white;
+}
+
+.nav_items{
+  font-size: 16px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-left: -23px;
+}
+
+.nav_items:hover{
+  background: #666666;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.fa{
+  margin-right: 20px;
+}
+
+.homeContent{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
