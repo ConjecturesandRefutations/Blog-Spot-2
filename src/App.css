@@ -192,13 +192,13 @@ button {
  }
 
  .light {
-  background-color: #E8EDEF;
+  background-color: #e2d4ca;
   color: #333;
 }
  
 .dark {
   background-color: #333;
-  color: #E8EDEF;
+  color: #e2d4ca;
 }
 
 .homepage{
@@ -231,11 +231,14 @@ button {
   font-family: poppins;
   margin: 0;
   list-style-type: none;
+  z-index: 9999;
 }
 
 .Navbar:hover {
   width: 175px;
   overflow-y: none;
+  z-index: 9999;
+  position: relative;
 }
 
 .Navbar.light {
@@ -245,7 +248,7 @@ button {
 
 .Navbar.dark {
   background-color: black;
-  color: #E8EDEF;
+  color: #e2d4ca;
 }
 
 .nav_items{
@@ -253,6 +256,7 @@ button {
   padding-top: 18px;
   padding-bottom: 18px;
   margin-left: -23px;
+  z-index: 9999;
 }
 
 .nav_items:hover{
@@ -260,6 +264,7 @@ button {
   font-weight: bold;
   transition: .3s ease;
   cursor: pointer;
+  z-index: 9999;
 }
 
 .fa{
@@ -275,4 +280,172 @@ button {
 
 #logout{
   margin-top: 42vh;
+}
+
+
+.navbar-container {
+  position: relative;
+  z-index: 9999;
+}
+
+/* BLOG FORM */
+
+.addBlog {
+  margin: 20px;
+}
+
+.addBlog h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blogForm {
+  width: 800px;
+  padding: 20px;
+  background-color: #9790a8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.blogForm.dark {
+  background-color: #2e2b35;
+  border: 1px solid #ccc;
+}
+
+.blogForm .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.blogForm .row .title,
+.blogForm .row .date {
+  width: calc(50% - 10px);
+}
+
+.blogForm .row label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.blogForm .row input[type="text"],
+.blogForm .row textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.blogForm .content label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.blogForm .content textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  resize: vertical;
+}
+
+.blogForm .submit {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.blogForm .submit .submitInput {
+  padding: 10px 20px;
+  background-color: #34e0ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: poppins;
+  font-weight: bold;
+}
+
+.submitInput.dark{
+  background-color: black !important;
+}
+
+.blogForm .submit .submitInput:hover {
+  background-color: #c2e8ff;
+}
+
+@media (max-width: 1300px) {
+  .addBlog, .blogForm {
+   width:600px;
+  }
+}
+
+@media (max-width: 820px) {
+  .addBlog, .blogForm, .blogTitle {
+    margin-left: 20px;
+    width:400px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .addBlog, .blogForm {
+   width:350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .addBlog, .blogForm, .blogTitle {
+   margin-left: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .addBlog, .blogForm, .blogTitle {
+   margin-left: 20px;
+   width: 300px;
+  }
+}
+
+@media (max-width: 390px) {
+  .addBlog, .blogForm, .blogTitle {
+   margin-left: 20px;
+   width: 275px;
+  }
+}
+
+@media (max-width: 350px) {
+  .addBlog, .blogForm, .blogTitle {
+   margin-left: 20px;
+   width: 250px;
+  }
+}
+
+@media (max-width: 330px) {
+  .addBlog, .blogForm, .blogTitle {
+   margin-left: 25px;
+   width: 240px;
+  }
+}
+
+@media (max-width: 310px) {
+  .addBlog, .blogForm, .blogTitle {
+   margin-left: 23px;
+   width: 245px;
+  }
+}
+
+@media (max-width: 310px) {
+  .addBlog, .blogForm, .blogTitle {
+   margin-left: 23px;
+   width: 235px;
+  }
+}
+
+@media (max-width: 290px) {
+  .addBlog, .blogForm, .blogTitle {
+   margin-left: 23px;
+   width: 220px;
+  }
 }
